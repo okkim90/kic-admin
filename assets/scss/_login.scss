@@ -1,0 +1,52 @@
+.login {
+    &_wrap {
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: $CBrand;
+        background-image: linear-gradient(to bottom, #093389 0%, #0e2a65 100%, rgba(9, 51, 137, 0.02) 100%, rgba(9, 51, 137, 0) 100%, rgba(9, 51, 137, 0) 100%, rgba(9, 51, 137, 0) 100%);
+    }
+
+    &_box {
+        max-width: 600px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 1em;
+        box-shadow: 0 6px 10px rgba(#000,0.4);
+        padding: 40px;
+        box-sizing: border-box;
+        @include mobile {
+            padding: 30px;
+            border-radius: 0.5em;
+        }
+        &_top {
+            margin-bottom: 40px;
+            @include mobile {
+                margin-bottom: 30px;
+            }
+            img {
+                width: 300px;
+                max-width: 90%;
+            }
+            .msg_greeting {
+                font-size: 18px;
+                margin-top: 30px;
+                font-weight: 500;
+                @include mobile {
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    &_form {
+        margin-top: -10px;
+        .f_input , .f_btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}

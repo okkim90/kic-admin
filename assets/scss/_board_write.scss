@@ -1,0 +1,330 @@
+.f_input {
+    width: 100%;
+    max-width: 600px;
+    &.w100 {
+        max-width: 100%;
+    }
+    height: 60px;
+    padding: 0 30px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    font-size: 18px;
+    &[type='password']{
+        font-family: 'Verdana';
+    }
+    &:read-only {
+        background-color: #f6f7fa;
+        
+    }
+
+    @include mobile {
+        font-size: 13px;
+        padding: 0 10px;
+        height: 40px;
+    }
+}
+.f_select {
+    width: 100%;
+    max-width: 600px;
+    &.w100 {
+        max-width: 100%;
+    }
+    height: 60px;
+    padding: 0 30px;
+    padding-right: 60px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    font-size: 18px;
+    @include mobile {
+        font-size: 13px;
+        padding: 0 10px;
+        padding-right: 30px;
+        height: 40px;
+    }
+}
+.f_textarea {
+    width: 100%;
+    height: 300px;
+    padding: 19px 30px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.5;
+    @include mobile {
+        font-size: 13px;
+        padding: 10px;
+        height: 100px;
+    }
+}
+.f_btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 180px;
+    max-width: 100%;
+    padding: 0 20px;
+    font-size: 18px;
+    height: 60px;
+    background-color: #555;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 58px;
+    @include mobile {
+        width: 120px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 14px;
+    }
+    &.ty_big {
+        width: 250px;
+        max-width: 100%;
+        height: 70px;
+        line-height: 68px;
+        font-size: 20px;
+
+        @include mobile {
+            max-width: 150px;
+            height: 45px;
+            line-height: 43px;
+            font-size: 14px;
+        }
+
+
+    }
+    &.bg_blue {
+        background-color: #1f2085;
+        color: #fff;
+    }
+    &.bg_grey {
+        background-color: #555;
+        color: #fff;
+    }
+    &.line_blue {
+        color: #222;
+        background-color: #fff;
+        border-color: #1f2085;
+    }
+    &.line_black {
+        color: #222;
+        background-color: #fff;
+        border: 1px solid #222;
+        transition: all .12s ease-in-out;
+        &:hover {
+            background-color: #555;
+            border-color: #555;
+            color: #fff;
+        }
+    }
+}
+
+.board_write {
+    &_cont {
+        border-top: 1px solid #222;
+        border-bottom: 1px solid #222;
+        @include mobile { 
+            padding: 15px 0;
+        }
+    }
+    &_item {
+        display: flex;
+        font-size: 18px;
+        & + & {
+            border-top: 1px solid #d9d9d9;
+        }
+        @include mobile {
+            display: block;
+            font-size: 13px;
+            & + & {
+                border-top: none;
+                margin-top: 30px;
+            }
+        }
+        .col_tit {
+            background-color: $c_sky;
+            padding: 30px;
+            line-height: 60px;
+            width: 240px;
+            box-sizing: border-box;
+            @include tablet {
+                width: 200px;
+                padding: 20px;
+            }
+            @include mobile {
+                display: inline-block;
+                vertical-align: top;
+                background-color: transparent;
+                padding: 0;
+                line-height: 1.6;
+                font-size: 16px;
+            }
+            
+            .ico_required {
+                color: $c_red;
+                font-weight: bold;
+            }
+        }
+        .col_cont {
+            flex: 1;
+            min-width: 0;
+            padding: 30px;
+            @include tablet {
+                padding: 20px;
+            }
+            @include mobile {
+                padding: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.capcha_set {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    
+    
+    &_refresh {
+        width: 60px;
+        height: 60px;
+        background-image: url(../images/common/ico_refresh.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px;
+        background-color: #333;
+        flex-shrink: 0;
+        margin-right: 10px;
+        @include mobile {
+            margin-right: 0;    
+        }
+    }   
+    &_img {
+        width: 200px;
+        height: 60px;
+        border: 1px solid $CLine;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        * {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+    }
+    .f_input {
+        flex: 1;
+        @include mobile {
+            flex: auto;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+    }
+}
+
+.file_set {
+    position: relative;
+    display: flex;
+    max-width: 600px;
+    & + & {
+        margin-top: 10px;
+    }
+    .file_box {
+        position: relative;
+        width: 100%;
+        &.hasFile {
+            .btn_del {
+                display: block;
+            }
+        }
+    }
+    .f_hidden {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .f_input {
+        padding-right: 60px;
+        text-overflow: ellipsis;
+        background-color: #f6f7fa;
+        @include mobile {
+            padding-right: 40px;
+        }
+    }
+    .btn_del {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        background: url(../images/common/ico_del.svg) no-repeat center center;
+        background-size: 40px;
+        @include mobile {
+            width: 40px;
+            height: 40px;
+            background-size: 20px;
+        }
+    }
+    .btn_add {
+        border: 1px solid #222;
+        margin-left: 10px;
+        box-sizing: border-box;
+        width: 60px;
+        height: 60px;
+        background: url(../images/common/ico_plus.svg) no-repeat center center;
+        flex-shrink: 0;
+        @include mobile {
+            width: 40px;
+            height: 40px;
+            background-size: 20px;
+        }
+    }
+    .btn_remove {
+        border: 1px solid #222;
+        margin-left: 10px;
+        box-sizing: border-box;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        &::after {
+            content:'';
+            width: 28px;
+            height: 2px;
+            background-color: #222;
+            
+        }
+        @include mobile {
+            width: 40px;
+            height: 40px;
+            &::after {
+                width: 20px;
+            }
+        }
+    }
+}
+
+.address_set {
+    &_sec {
+        display: flex;
+        & + & {
+            margin-top: 10px;
+        }
+    }
+    &_num {
+        max-width: 300px;
+    }
+    &_btn {
+        margin-left: 10px;
+    }
+    // &_detail {
+    //     width: 100%;
+    //     max-width: 100%;
+    // }
+}
