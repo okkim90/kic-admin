@@ -7,6 +7,7 @@
     box-sizing: border-box;
     z-index: 9998;
     transition: transform .4s;
+    background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
 
@@ -20,9 +21,10 @@
     &_top {
         position: relative;
         z-index: 9999;
-        background-color: #fff;
+        background-color: rgba($CBrand , .08);
         transition: all .3s ease-in-out;
         border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
         .inner {
             display: flex;
             justify-content: flex-end;
@@ -762,7 +764,7 @@
 
     .container {
         padding-bottom: 60px;
-        padding-top: 100px;
+        padding-top: 60px;
     }
 
     .footer {

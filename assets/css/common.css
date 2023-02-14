@@ -656,12 +656,13 @@ input::-webkit-search-results-decoration {
   box-sizing: border-box;
   z-index: 9998;
   transition: transform 0.4s;
+  background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .header_top {
   position: relative;
   z-index: 9999;
-  background-color: #fff;
+  background-color: rgba(31, 32, 133, 0.08);
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
@@ -1283,7 +1284,7 @@ input::-webkit-search-results-decoration {
   }
   .container {
     padding-bottom: 60px;
-    padding-top: 100px;
+    padding-top: 60px;
   }
   .footer_top {
     padding: 0;
@@ -1404,7 +1405,7 @@ input::-webkit-search-results-decoration {
     box-sizing: border-box;
     padding: 0;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 30px;
     margin-right: 0;
     padding-right: 0;
   }
@@ -1560,6 +1561,20 @@ input::-webkit-search-results-decoration {
 .kic_list .col.writer {
   width: 120px;
   flex-shrink: 0;
+}
+.kic_list .col.branch {
+  width: 80px;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .kic_list .col.branch {
+    margin-left: auto;
+    font-size: 13px;
+  }
+  .kic_list .col.branch::before {
+    content: "지사 : ";
+    color: #999;
+  }
 }
 @media (max-width: 767px) {
   .kic_list .col.col_bot {
@@ -3875,7 +3890,7 @@ input::-webkit-search-results-decoration {
 
 .sub_tit {
   text-align: center;
-  padding: 150px 0 80px;
+  padding: 60px 0;
 }
 .sub_tit .tit {
   font-size: 50px;
@@ -3883,7 +3898,7 @@ input::-webkit-search-results-decoration {
 }
 @media (max-width: 767px) {
   .sub_tit {
-    padding: 40px 0 30px;
+    padding: 20px 0 20px;
   }
   .sub_tit .tit {
     font-size: 26px;
@@ -3938,11 +3953,13 @@ input::-webkit-search-results-decoration {
 
 .search_form {
   display: flex;
-  padding: 20px;
+  flex-wrap: wrap;
+  padding: 20px 40px;
   box-sizing: border-box;
   background-color: #f6f7fa;
   justify-content: center;
   margin-bottom: 70px;
+  gap: 10px;
 }
 @media (max-width: 767px) {
   .search_form {
@@ -4025,7 +4042,7 @@ input::-webkit-search-results-decoration {
   margin-left: 10px;
 }
 .search_form_select {
-  width: 200px;
+  flex: 1;
   flex-shrink: 0;
   box-sizing: border-box;
   border: 1px solid #bababa;
@@ -4034,23 +4051,23 @@ input::-webkit-search-results-decoration {
 }
 @media (max-width: 767px) {
   .search_form_select {
-    font-size: 14px;
+    flex: auto;
     width: 100%;
+    font-size: 14px;
     padding: 0 10px;
-    margin-bottom: 10px;
   }
 }
 .search_form_input {
-  flex: 1;
+  width: calc(100% - 100px);
   box-sizing: border-box;
   border: 1px solid #bababa;
-  max-width: 540px;
-  margin: 0 20px;
   padding: 0 20px;
   font-size: 18px;
 }
 @media (max-width: 767px) {
   .search_form_input {
+    width: 100%;
+    flex: 1;
     height: 40px;
     font-size: 14px;
     margin: 0;
@@ -4074,7 +4091,6 @@ input::-webkit-search-results-decoration {
   .search_form_btn {
     font-size: 14px;
     width: 70px;
-    margin-left: 10px;
   }
 }
 .search_form_btn .ico_search {

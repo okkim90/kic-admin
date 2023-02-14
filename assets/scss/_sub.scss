@@ -235,13 +235,13 @@
 
 .sub_tit {
     text-align: center;
-    padding: 150px 0 80px;
+    padding: 60px 0;
     .tit {
         font-size: 50px;
         font-weight: bold; 
     }
     @include mobile { 
-        padding: 40px 0 30px;
+        padding: 20px 0 20px;
         .tit {
             font-size: 26px;
         }
@@ -296,12 +296,13 @@
 
 .search_form {
     display: flex;
-    padding: 20px;
+    flex-wrap: wrap;
+    padding: 20px 40px;
     box-sizing: border-box;
     background-color: #f6f7fa;
     justify-content: center;
     margin-bottom: 70px;
-    
+    gap: 10px;
     @include mobile { 
         margin-bottom: 40px;
         flex-wrap: wrap;
@@ -367,29 +368,28 @@
         }
     }
     &_select {
-        width: 200px;
+        flex: 1;
         flex-shrink: 0;
         box-sizing: border-box;
         border: 1px solid #bababa;
         padding: 0 20px;
         font-size: 18px;
-        
         @include mobile {
-            font-size: 14px;
+            flex: auto;
             width: 100%;
+            font-size: 14px;
             padding: 0 10px;
-            margin-bottom: 10px;
         }
     }
     &_input {
-        flex: 1;
+        width: calc(100% - 100px);
         box-sizing: border-box;
         border: 1px solid #bababa;
-        max-width: 540px;
-        margin: 0 20px;
         padding: 0 20px;
         font-size: 18px;
         @include mobile {
+            width: 100%;
+            flex: 1;
             height: 40px;
             font-size: 14px;
             margin: 0;
@@ -411,7 +411,7 @@
         @include mobile {
             font-size: 14px;
             width: 70px;
-            margin-left: 10px;
+            //margin-left: 10px;
         }
         .ico_search {
             margin-right: 5px;
