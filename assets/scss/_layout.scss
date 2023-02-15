@@ -206,8 +206,11 @@
                 transition: all .3s ease-in-out;
                 line-height: 80px;
                 span {
-                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     position: relative;
+                    
                     &::before {
                         content:'';
                         position: absolute;
@@ -323,6 +326,7 @@
         font-weight: 500;
         margin-left: 5px;
         text-align: center;
+        letter-spacing: normal;
     }
 }
 
@@ -438,6 +442,10 @@
             display: flex;
             flex-flow: column;
         }
+        .log_area {
+            padding: 10px 30px;
+            background-color: rgba($CBrand , .1);
+        }
         &_top {
             
             display: flex;
@@ -462,17 +470,20 @@
         &_dep1 {
             margin: 0 30px;
             overflow-y: auto;
-            border-top: 1px solid rgba(#000,.08);
+            //border-top: 1px solid rgba(#000,.08);
             &_item {
                 border-bottom: 1px solid rgba(#000,.08);
                 
             }
             &_tit {
-                display: block;
+                display: flex;
+                align-items: center;
+                
                 font-size: 20px;
                 line-height: 60px;
                 position: relative; 
                 letter-spacing: 0.2em;
+
                 &::after {
                     content:'';
                     position: absolute;
@@ -600,7 +611,6 @@
         }
         .log_area {
             padding: 10px 20px;
-            background-color: rgba($CBrand , .1);
         }
         &_logo {
             left: 20px;

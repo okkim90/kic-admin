@@ -13,6 +13,9 @@
         @include mobile { 
             margin-bottom: 10px;
         }
+        .f_btn {
+            font-weight: 500;
+        }
     }
     &_total {
         font-size: 18px;
@@ -113,7 +116,7 @@
         }
         &.num {
             width: 50px;
-            @include tablet { 
+            @include mobile {
                 display: none;
             }
         }

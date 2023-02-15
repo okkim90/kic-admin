@@ -801,7 +801,9 @@ input::-webkit-search-results-decoration {
   line-height: 80px;
 }
 .header_menu .hm_dep1_link span {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 .header_menu .hm_dep1_link span::before {
@@ -895,6 +897,7 @@ input::-webkit-search-results-decoration {
   font-weight: 500;
   margin-left: 5px;
   text-align: center;
+  letter-spacing: normal;
 }
 
 .footer {
@@ -992,6 +995,10 @@ input::-webkit-search-results-decoration {
     display: flex;
     flex-flow: column;
   }
+  .nav .log_area {
+    padding: 10px 30px;
+    background-color: rgba(31, 32, 133, 0.1);
+  }
   .nav_top {
     display: flex;
     flex-shrink: 0;
@@ -1015,13 +1022,13 @@ input::-webkit-search-results-decoration {
   .nav_dep1 {
     margin: 0 30px;
     overflow-y: auto;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
   }
   .nav_dep1_item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
   .nav_dep1_tit {
-    display: block;
+    display: flex;
+    align-items: center;
     font-size: 20px;
     line-height: 60px;
     position: relative;
@@ -1134,7 +1141,6 @@ input::-webkit-search-results-decoration {
   }
   .nav .log_area {
     padding: 10px 20px;
-    background-color: rgba(31, 32, 133, 0.1);
   }
   .nav_logo {
     left: 20px;
@@ -1174,6 +1180,9 @@ input::-webkit-search-results-decoration {
   .kic_list_top {
     margin-bottom: 10px;
   }
+}
+.kic_list_top .f_btn {
+  font-weight: 500;
 }
 .kic_list_total {
   font-size: 18px;
@@ -1280,7 +1289,7 @@ input::-webkit-search-results-decoration {
 .kic_list .col.num {
   width: 50px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .kic_list .col.num {
     display: none;
   }
@@ -2404,6 +2413,7 @@ input::-webkit-search-results-decoration {
   align-items: center;
   cursor: pointer;
   margin-left: 30px;
+  height: 60px;
 }
 .board_write .chk_list_item:first-child {
   margin-left: 0;
@@ -2411,6 +2421,7 @@ input::-webkit-search-results-decoration {
 @media (max-width: 767px) {
   .board_write .chk_list_item {
     margin-left: 20px;
+    height: auto;
   }
 }
 .board_write .chk_list_item .input_chk {
