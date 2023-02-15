@@ -1424,7 +1424,10 @@ input::-webkit-search-results-decoration {
   }
 }
 .kic_list .col.q_type {
-  width: 80px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .kic_list .col.q_type {
@@ -1468,6 +1471,9 @@ input::-webkit-search-results-decoration {
   .kic_list .col.col_bot:last-child::after {
     display: none;
   }
+}
+.kic_list .col .tooltip {
+  margin-left: 6px;
 }
 .kic_list .ico_notice {
   display: inline-block;
@@ -3922,12 +3928,23 @@ input::-webkit-search-results-decoration {
   font-size: 50px;
   font-weight: bold;
 }
+.sub_tit .desc {
+  color: #999;
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: 500;
+}
 @media (max-width: 767px) {
   .sub_tit {
     padding: 20px 0 20px;
   }
   .sub_tit .tit {
     font-size: 26px;
+  }
+  .sub_tit .desc {
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
   }
 }
 
@@ -5273,6 +5290,63 @@ input::-webkit-search-results-decoration {
     padding-left: 12px;
     align-self: center;
   }
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+.tooltip_ico {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: 14px;
+  cursor: help;
+}
+.tooltip:hover .tooltip_cont {
+  display: block;
+  position: absolute;
+}
+.tooltip_cont {
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  text-align: left;
+  background-color: #ededed;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  bottom: calc(100% + 14px);
+  left: 0;
+}
+.tooltip_cont::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 14px;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+.tooltip_cont::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+  top: 100%;
+  border-top: 10px solid #ededed;
+  border-left: 0 solid transparent;
+  border-right: 10px solid transparent;
 }
 
 .layer_popup {

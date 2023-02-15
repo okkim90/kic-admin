@@ -265,7 +265,10 @@
             }
         }
         &.q_type {
-            width: 80px;
+            width: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             @include mobile {
                 font-size: 13px;
                 width: auto;
@@ -314,6 +317,9 @@
                     display: none;
                 }
             }
+        }
+        .tooltip {
+            margin-left: 6px;
         }
     }
     .ico_notice {
