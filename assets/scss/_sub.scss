@@ -6,6 +6,11 @@
     max-width: 1060px;
     margin: 0 auto;
 }
+.input_chk {
+    font-size: 1em;
+    width: 1.5em;
+    height: 1.5em;
+}
 
 .right_nav {
     position: absolute;
@@ -382,11 +387,15 @@
         }
     }
     &_input {
-        width: calc(100% - 100px);
+        flex: 1;
         box-sizing: border-box;
         border: 1px solid #bababa;
         padding: 0 20px;
         font-size: 18px;
+        @include tablet {
+            flex: auto;
+            width: calc(100% - 100px);
+        }
         @include mobile {
             width: 100%;
             flex: 1;
