@@ -58,9 +58,10 @@
                         <a href="" class="hm_dep1_link"><span>문의 관리</span></a>
                         <div class="hm_dep2_box">
                             <ul class="hm_dep2">
-                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">견적문의 관리</a></li>
-                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">Q&A 관리</a></li>
-                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">문의사항 관리</a></li>
+                                <li class="hm_dep2_item"><a href="request_list.html" class="hm_dep2_link">견적문의 관리<span class="board_count">125</span></a></li>
+                                <li class="hm_dep2_item"><a href="qna_list.html" class="hm_dep2_link">Q&A 관리<span class="board_count">7</span></a></li>
+                                <li class="hm_dep2_item"><a href="contact_list.html" class="hm_dep2_link">Contact us 관리<span class="board_count">3</span></a></li>
+                                <li class="hm_dep2_item"><a href="tech_list.html" class="hm_dep2_link">기술문의 관리<span class="board_count">0</span></a></li>
                             </ul>
                         </div>
                     </li>
@@ -68,9 +69,9 @@
                         <a href="" class="hm_dep1_link"><span>게시판 관리</span></a>
                         <div class="hm_dep2_box">
                             <ul class="hm_dep2">
-                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">공지사항 관리</a></li>
-                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">자료실 관리</a></li>
-                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">팝업 관리</a></li>
+                                <li class="hm_dep2_item"><a href="notice_list.html" class="hm_dep2_link">공지사항 관리</a></li>
+                                <li class="hm_dep2_item"><a href="reference_list.html" class="hm_dep2_link">자료실 관리</a></li>
+                                <li class="hm_dep2_item"><a href="popup_list.html" class="hm_dep2_link">팝업 관리</a></li>
                             </ul>
                         </div>
                     </li>
@@ -93,17 +94,18 @@
                     <li class="nav_dep1_item">
                         <a href="javascript:void(0)" class="nav_dep1_tit">문의 관리</a>
                         <ul class="nav_dep2">             
-                            <li class="nav_dep2_item"><a href="" class="nav_link">견적문의 관리</a></li>
-                            <li class="nav_dep2_item"><a href="" class="nav_link">Q&A 관리</a></li>
-                            <li class="nav_dep2_item"><a href="" class="nav_link">문의사항 관리</a></li>
+                            <li class="nav_dep2_item"><a href="request_list.html" class="nav_link">견적문의 관리<span class="board_count">125</span></a></li>
+                            <li class="nav_dep2_item"><a href="qna_list.html" class="nav_link">Q&A 관리<span class="board_count">7</span></a></li>
+                            <li class="nav_dep2_item"><a href="contact_list.html" class="nav_link">Contact us 관리<span class="board_count">3</span></a></li>
+                            <li class="nav_dep2_item"><a href="tech_list.html" class="nav_link">기술문의 관리<span class="board_count">0</span></a></li>
                         </ul>
                     </li>
                     <li class="nav_dep1_item">
                         <a href="javascript:void(0)" class="nav_dep1_tit">게시판 관리</a>
                         <ul class="nav_dep2">             
-                            <li class="nav_dep2_item"><a href="" class="nav_link">공지사항 관리</a></li>
-                            <li class="nav_dep2_item"><a href="" class="nav_link">자료실 관리</a></li>
-                            <li class="nav_dep2_item"><a href="" class="nav_link">팝업 관리</a></li>
+                            <li class="nav_dep2_item"><a href="notice_list.html" class="nav_link">공지사항 관리</a></li>
+                            <li class="nav_dep2_item"><a href="reference_list.html" class="nav_link">자료실 관리</a></li>
+                            <li class="nav_dep2_item"><a href="popup_list.html" class="nav_link">팝업 관리</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -122,6 +124,13 @@
                     <p class="board_write_required"><span>*</span> 필수 입력값입니다.</p>
                     <div class="board_write">
                         <div class="board_write_cont">
+                            
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">제목 <span class="ico_required">*</span></label>
+                                <div class="col_cont">
+                                    <input type="text" class="f_input w100" placeholder="제목을 입력해주세요." value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut quis deleniti vel impedit, optio possimus!">
+                                </div>
+                            </div>
                             <div class="board_write_item ">
                                 <label for="" class="col_tit">고정여부 <span class="ico_required">*</span></label>
                                 <div class="col_cont flexBox ai_center">
@@ -129,12 +138,6 @@
                                         <label class="chk_list_item"><input type="radio" name="noti" class="input_chk" checked> 일반</label>
                                         <label class="chk_list_item"><input type="radio" name="noti" class="input_chk"> 상단고정</label>
                                     </div>  
-                                </div>
-                            </div>
-                            <div class="board_write_item ">
-                                <label for="" class="col_tit">제목 <span class="ico_required">*</span></label>
-                                <div class="col_cont">
-                                    <input type="text" class="f_input w100" placeholder="제목을 입력해주세요." value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut quis deleniti vel impedit, optio possimus!">
                                 </div>
                             </div>
                             <div class="board_write_item">

@@ -309,6 +309,21 @@
             }
         }
     }
+
+    .board_count {
+        display: inline-block;
+        padding: 0 5px;
+        box-sizing: border-box;
+        min-width: 24px;
+        line-height: 18px;
+        font-size: 12px;
+        border-radius: 9px;
+        background-color: #f00;
+        color: #fff;
+        font-weight: 500;
+        margin-left: 5px;
+        text-align: center;
+    }
 }
 
 
