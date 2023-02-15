@@ -70,7 +70,7 @@
         padding: 10px 0;
         align-items: center;
         @include mobile { 
-            padding: 10px 0;
+            padding: 10px;
             flex-wrap: wrap;
         }
     }
@@ -266,9 +266,6 @@
         }
         &.q_type {
             width: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             @include mobile {
                 font-size: 13px;
                 width: auto;
@@ -276,8 +273,7 @@
                 &::before {
                     content:'';
                     display: inline-block;
-                    vertical-align: top;
-                    
+                    vertical-align: top; 
                     width: 1px;
                     height: 12px;
                     background-color: #d9d9d9;
@@ -296,25 +292,18 @@
                 line-height: 1.6;
                 color: #666;
                 margin-top: 4px;
-                &.date {
-                    &::after {
-                        display: none;
+                & ~ .col_bot {
+                    &::before {
+                        content:'';
+                        display: inline-block;
+                        vertical-align: top;
+                        
+                        width: 1px;
+                        height: 12px;
+                        background-color: #d9d9d9;
+                        margin: 0 7px;
+                        margin-top: 4px;
                     }
-                }
-                &::after {
-                    content:'';
-                    display: inline-block;
-                    vertical-align: top;
-                    
-                    width: 1px;
-                    height: 12px;
-                    background-color: #d9d9d9;
-                    margin: 0 7px;
-                    margin-top: 4px;
-
-                }
-                &:last-child::after {
-                    display: none;
                 }
             }
         }

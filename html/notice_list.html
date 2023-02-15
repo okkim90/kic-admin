@@ -114,125 +114,103 @@
         <div class="sub_wrap">
             <div class="inner">
                 <div class="sub_tit">
-                    <h2 class="tit">문의사항 관리</h2>
-                    <div class="desc">(Contact us & 기술문의)</div>
+                    <h2 class="tit">공지사항 관리</h2>
                 </div>
                 <form action="" class="search_form">
                     <select name="" id="" class="search_form_select">
-                        <option value="">진행상태 전체</option>
-                        <option value="">답변대기</option>
-                        <option value="">답변완료</option>
+                        <option value="">고정여부 전체</option>
+                        <option value="">고정</option>
+                        <option value="">일반</option>
                     </select>
                     <select name="" id="" class="search_form_select">
-                        <option value="">문의구분 전체</option>
-                        <option value="">일반문의(Contact us)</option>
-                        <option value="">기술문의</option>
-                    </select>
-                    <select name="" id="" class="search_form_select">
-                        <option value="">검색어 전체</option>
-                        <option value="">회사명</option>
-                        <option value="">담당자</option>
-                        <option value="">연락처</option>
+                        <option value="">전체</option>
+                        <option value="">제목</option>
+                        <option value="">내용</option>
                     </select>
                     <input type="search" placeholder="검색어를 입력하세요." class="search_form_input">
                     <button type="button" class="search_form_btn"><i class="ico_search"></i>검색</button>
                 </form>
                 <div class="kic_list_wrap">
                     <div class="kic_list_top">
-                        <div class="kic_list_total">전체 <span>1,000</span> 건</div>
+                        <div class="kic_list_total">전체 <span>1,000</span> 건</div>                        
                     </div>
                     <div class="kic_list">
                         <div class="kic_list_head">
                             <div class="col num">번호</div>
-                            <div class="col status">진행상태</div>
-                            <div class="col q_type">
-                                문의구분 
-                                <div class="tooltip">
-                                    <i class="tooltip_ico">?</i>
-                                    <div class="tooltip_cont">
-                                        <ul>
-                                            <li>기술문의 : 기술문의에서 작성한 문의사항</li>
-                                            <li>일반문의 : Contact us에서 작성한 문의사항</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col branch">지사</div>
                             <div class="col tit">제목</div>
-                            <div class="col writer">회사명</div>
                             <div class="col date">작성일자</div>
-                            <div class="col date">답변일자</div>
+                            <div class="col writer">작성자</div>
+                            <div class="col view">조회</div>
                         </div>
                         <ul class="kic_list_body">
-                            
-                            <li class="kic_list_item">
-                                <a href="tech_and_contact_view.html" class="kic_list_link">
-                                    <div class="col num">999</div>
-                                    <div class="col status">답변대기</div><!-- 답변 완료일시 on class 추가 -->
-                                    <div class="col q_type">기술문의</div>
-                                    <div class="col branch">-</div>
+                            <li class="kic_list_item ty_notice">
+                                <a href="notice_view.html" class="kic_list_link">
+                                    <div class="col num">
+                                        <i class="ico_notice">공지</i>
+                                    </div>
                                     <div class="col tit">
                                         <span class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</span>
+                                        <i class="ico_attach"></i><!--첨부파일 있을 경우-->
                                     </div>
-                                    <div class="col writer col_bot">(주)회사이름</div>
+                                    <div class="col writer col_bot">관리자1</div>
                                     <div class="col date col_bot">2023-11-22</div>
-                                    <div class="col date ty_answer col_bot">-</div>
+                                    <div class="col view col_bot">1,056</div>
                                 </a>
                             </li>
-                            <li class="kic_list_item">
-                                <a href="tech_and_contact_view.html" class="kic_list_link">
-                                    <div class="col num">999</div>
-                                    <div class="col status">답변대기</div><!-- 답변 완료일시 on class 추가 -->
-                                    <div class="col q_type">일반문의</div>
-                                    <div class="col branch">대전지사</div>
+                            <li class="kic_list_item ty_notice">
+                                <a href="notice_view.html" class="kic_list_link">
+                                    <div class="col num">
+                                        <i class="ico_notice">공지</i>
+                                    </div>
                                     <div class="col tit">
                                         <span class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</span>
+                                        <i class="ico_attach"></i><!--첨부파일 있을 경우-->
                                     </div>
-                                    <div class="col writer col_bot">(주)회사이름</div>
+                                    <div class="col writer col_bot">관리자2</div>
                                     <div class="col date col_bot">2023-11-22</div>
-                                    <div class="col date ty_answer col_bot">-</div>
+                                    <div class="col view col_bot">1,056</div>
                                 </a>
                             </li>
-                            <li class="kic_list_item">
-                                <a href="tech_and_contact_view.html" class="kic_list_link">
-                                    <div class="col num">999</div>
-                                    <div class="col status on">답변완료</div><!-- 답변 완료일시 on class 추가 -->
-                                    <div class="col q_type">일반문의</div>
-                                    <div class="col branch">부산지사</div>
+                            <li class="kic_list_item ">
+                                <a href="notice_view.html" class="kic_list_link">
+                                    <div class="col num">
+                                        999
+                                    </div>
                                     <div class="col tit">
                                         <span class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</span>
+                                        <i class="ico_attach"></i><!--첨부파일 있을 경우-->
                                     </div>
-                                    <div class="col writer col_bot">(주)회사이름</div>
+                                    <div class="col writer col_bot">관리자3</div>
                                     <div class="col date col_bot">2023-11-22</div>
-                                    <div class="col date ty_answer col_bot">2023-11-22</div>
+                                    <div class="col view col_bot">1,056</div>
                                 </a>
                             </li>
-                            <li class="kic_list_item">
-                                <a href="tech_and_contact_view.html" class="kic_list_link">
-                                    <div class="col num">999</div>
-                                    <div class="col status on">답변완료</div><!-- 답변 완료일시 on class 추가 -->
-                                    <div class="col q_type">기술문의</div>
-                                    <div class="col branch">-</div>
+                            <li class="kic_list_item ">
+                                <a href="notice_view.html" class="kic_list_link">
+                                    <div class="col num">
+                                        999
+                                    </div>
                                     <div class="col tit">
                                         <span class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</span>
+                                        <i class="ico_attach"></i><!--첨부파일 있을 경우-->
                                     </div>
-                                    <div class="col writer col_bot">(주)회사이름</div>
+                                    <div class="col writer col_bot">관리자4</div>
                                     <div class="col date col_bot">2023-11-22</div>
-                                    <div class="col date ty_answer col_bot">2023-11-22</div>
+                                    <div class="col view col_bot">1,056</div>
                                 </a>
                             </li>
-                            <li class="kic_list_item">
-                                <a href="tech_and_contact_view.html" class="kic_list_link">
-                                    <div class="col num">999</div>
-                                    <div class="col status on">답변완료</div><!-- 답변 완료일시 on class 추가 -->
-                                    <div class="col q_type">기술문의</div>
-                                    <div class="col branch">-</div>
+                            <li class="kic_list_item ">
+                                <a href="notice_view.html" class="kic_list_link">
+                                    <div class="col num">
+                                        999
+                                    </div>
                                     <div class="col tit">
                                         <span class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</span>
+                                        <i class="ico_attach"></i><!--첨부파일 있을 경우-->
                                     </div>
-                                    <div class="col writer col_bot">(주)회사이름</div>
+                                    <div class="col writer col_bot">관리자1</div>
                                     <div class="col date col_bot">2023-11-22</div>
-                                    <div class="col date ty_answer col_bot">2023-11-22</div>
+                                    <div class="col view col_bot">1,056</div>
                                 </a>
                             </li>
                         </ul>

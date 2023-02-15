@@ -387,11 +387,15 @@
     }
     &_select {
         flex: 1;
+        max-width: 200px;
         flex-shrink: 0;
         box-sizing: border-box;
         border: 1px solid #bababa;
         padding: 0 20px;
         font-size: 18px;
+        @include tablet {
+            max-width: none;
+        }
         @include mobile {
             flex: auto;
             width: 100%;

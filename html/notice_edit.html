@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 - KIC 코리아인스투르먼트(주)</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <!--// style -->
+
+     <!-- js -->
+     <script src="../assets/js/jquery-3.1.1.min.js"></script>
+     <script defer src="../assets/js/swiper.min.js"></script>
+     <script defer src="../assets/js/scrollAni.js"></script>
+     <script defer src="../assets/js/header.js"></script>
+     <script defer src="../assets/js/fileupload.js"></script>
+     <!--// js -->
+</head>
+<body>
+    <div id="skip-nav">
+        <a href="#container"></a>
+    </div>
+    <header id="header" class="header top">
+        <div class="header_top">
+            <div class="inner">
+                <div class="log_area">
+                    <div class="log_area_user">
+                        <strong><a href="">관리자</a></strong>님,  환영합니다.
+                    </div>
+                    <div class="log_area_btn">
+                        <button type="button" class="btn_logout"><div class="blind">로그아웃</div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bot">
+            <div class="inner">
+                <h1>
+                    <a href="/html/">
+                        <i class="ico_logo">
+                            <div class="blind">KIC 코리아인스투루먼트(주)</div>
+                        </i>
+                    </a>
+                </h1>
+                <button type="button" class="btn_toggle_nav">
+                    <span class="blind">메뉴 토글 버튼</span>
+                    <span class="bar_set">
+                        <span class="bar bar_top"></span>
+                        <span class="bar bar_mid"></span>
+                        <span class="bar bar_bot"></span>
+                    </span>
+                </button>
+                <ul class="header_menu">
+                    <li class="hm_dep1">
+                        <a href="" class="hm_dep1_link"><span>문의 관리</span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">견적문의 관리</a></li>
+                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">Q&A 관리</a></li>
+                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">문의사항 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hm_dep1"> 
+                        <a href="" class="hm_dep1_link"><span>게시판 관리</span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">공지사항 관리</a></li>
+                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">자료실 관리</a></li>
+                                <li class="hm_dep2_item"><a href="" class="hm_dep2_link">팝업 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile menu-->
+        <nav id="nav" class="nav">
+            <div class="nav_inner">
+                <a href="" class="nav_logo"><img src="../assets/images/common/logo.svg" alt=""></a>
+                <div class="log_area">
+                    <div class="log_area_user">
+                        <strong><a href="">관리자</a></strong>님,  환영합니다.
+                    </div>
+                    <div class="log_area_btn">
+                        <button type="button" class="btn_logout"><div class="blind">로그아웃</div></button>
+                    </div>
+                </div>
+                <ul class="nav_dep1">   
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">문의 관리</a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="" class="nav_link">견적문의 관리</a></li>
+                            <li class="nav_dep2_item"><a href="" class="nav_link">Q&A 관리</a></li>
+                            <li class="nav_dep2_item"><a href="" class="nav_link">문의사항 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">게시판 관리</a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="" class="nav_link">공지사항 관리</a></li>
+                            <li class="nav_dep2_item"><a href="" class="nav_link">자료실 관리</a></li>
+                            <li class="nav_dep2_item"><a href="" class="nav_link">팝업 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--//mobile menu -->
+    </header>
+    <div id="container" class="container">
+        <div class="sub_wrap">
+            <div class="inner">
+                <div class="sub_tit">
+                    <h2 class="tit">공지사항 관리</h2>
+                </div>
+                <div class="sub_sec">
+                    
+                    <p class="board_write_required"><span>*</span> 필수 입력값입니다.</p>
+                    <div class="board_write">
+                        <div class="board_write_cont">
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">고정여부 <span class="ico_required">*</span></label>
+                                <div class="col_cont flexBox ai_center">
+                                    <div class="chk_list">
+                                        <label class="chk_list_item"><input type="radio" name="noti" class="input_chk" checked> 일반</label>
+                                        <label class="chk_list_item"><input type="radio" name="noti" class="input_chk"> 상단고정</label>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">제목 <span class="ico_required">*</span></label>
+                                <div class="col_cont">
+                                    <input type="text" class="f_input w100" placeholder="제목을 입력해주세요." value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut quis deleniti vel impedit, optio possimus!">
+                                </div>
+                            </div>
+                            <div class="board_write_item">
+                                <label for="" class="col_tit">내용 <span class="ico_required">*</span></label>
+                                <div class="col_cont">
+                                    <textarea name="" id="" class="f_textarea" placeholder="내용을 입력해주세요.">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut quis deleniti vel impedit, optio possimus!</textarea>
+                                </div>
+                            </div>
+                            <div class="board_write_item">
+                                <label for="" class="col_tit">
+                                    썸네일 <span class="ico_required">*</span>
+                                    
+                                </label>
+                                <div class="col_cont">
+                                    <div class="upload_thumb">
+                                        <div class="board_write_tip ty_bot">
+                                            * 사이즈 : 290 X 180  px <br> * 확장자: jpg, png, gif
+                                        </div>
+                                        <input type="file" class="input_file">
+
+                                         <!-- 썸네일 이미지 선택된 상태-->
+                                        <div class="upload_thumb_preview">
+                                            <strong class="tit">미리보기</strong>
+                                            <div class="img_box">
+                                                <button type="button" class="btn_del"><div class="blind">삭제</div></button>
+                                                <img src="../assets/images/main/notice_sample2.png" alt="">          
+                                            </div>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="board_write_item">
+                                <label for="" class="col_tit">첨부파일</label>
+                                <div class="col_cont">
+                                    <div class="file_wrap">
+                                        <div class="file_set">
+                                            <div class="file_box hasFile">
+                                                <input type="file" class="f_hidden" onchange="select_file(this)" value="파일경로.파일명">
+                                                <input type="text" class="f_input" placeholder="파일을 선택해주세요." onclick=" open_file(this)" value="파일명 파일명 파일명.png" readonly>
+                                                <button class="btn_del" onclick=" del_file(this)"><span class="blind">파일삭제</span></button>
+                                            </div>
+                                            <button class="btn_add" onclick="add_form(5) //add_form(최대값)"><span class="blind">행 추가</span></button>
+                                        </div>
+                                        <div class="file_set">
+                                            <div class="file_box hasFile">
+                                                <input type="file" class="f_hidden" onchange="select_file(this)" value="파일경로.파일명">
+                                                <input type="text" class="f_input" placeholder="파일을 선택해주세요." onclick=" open_file(this)" value="파일명2 파일명2 파일명2.png" readonly>
+                                                <button class="btn_del" onclick=" del_file(this)"><span class="blind">파일삭제</span></button>
+                                            </div>
+                                            <button class="btn_add" onclick="add_form(5) //add_form(최대값)"><span class="blind">행 추가</span></button>
+                                        </div>
+                                        <div class="file_set">
+                                            <div class="file_box hasFile">
+                                                <input type="file" class="f_hidden" onchange="select_file(this)" value="파일경로.파일명">
+                                                <input type="text" class="f_input" placeholder="파일을 선택해주세요." onclick=" open_file(this)" value="파일명3 파일명3 파일명3.png" readonly>
+                                                <button class="btn_del" onclick=" del_file(this)"><span class="blind">파일삭제</span></button>
+                                            </div>
+                                            <button class="btn_add" onclick="add_form(5) //add_form(최대값)"><span class="blind">행 추가</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_area taC ty_bot">
+                            <input type="submit" class="f_btn ty_big bg_blue" value="수정"></input>
+                            <button type="button" class="f_btn ty_big bg_grey ">삭제</button>
+                            <button type="button" class="f_btn ty_big line_black">취소</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <p class="copyright">
+            Copyright@KIC, Korea Instrument All Rights Reserved.
+        </p>
+    </div>
+</body>
+</html>
