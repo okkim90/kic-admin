@@ -13,8 +13,17 @@
         @include mobile { 
             margin-bottom: 10px;
         }
+        .btn_box {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
         .f_btn {
             font-weight: 500;
+            max-width: 100%;
+            margin-left: 10px;
+            padding: 0 10px;
         }
     }
     &_total {
@@ -118,6 +127,17 @@
             width: 50px;
             @include mobile {
                 display: none;
+            }
+        }
+        &.chk {
+            width: 65px;
+            line-height: 1;
+            @include mobile {
+                width: auto;
+                order: 0;
+                margin-right: 10px;
+                margin-bottom: 2px;
+                
             }
         }
         &.prod {
@@ -240,6 +260,12 @@
             &.on {
                 color: blue;
             }
+            &.ty_on {
+                color: blue;
+            }
+            &.ty_soon {
+                color: hotpink;
+            }
             @include mobile { 
                 width: auto;
                 text-align: left;
@@ -247,6 +273,21 @@
                 font-size: 13px;
                 font-weight: bold;
                 order: 0;
+                margin-bottom: 2px;
+            }
+        }
+        &.order {
+            width: 70px;
+            @include mobile {
+                font-size: 13px;
+                width: auto;
+                margin-right: auto;
+                margin-bottom: 2px;
+                order: 0;
+                &::before {
+                    content:'노출순서 : ';
+                    color: #999;
+                }
             }
         }
         &.writer {

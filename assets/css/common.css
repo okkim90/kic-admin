@@ -318,12 +318,6 @@ input[type=checkbox] {
   height: 1em;
 }
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 input[type=text]:focus,
 input[type=password]:focus,
 input[type=tel]:focus,
@@ -1181,8 +1175,17 @@ input::-webkit-search-results-decoration {
     margin-bottom: 10px;
   }
 }
+.kic_list_top .btn_box {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-end;
+}
 .kic_list_top .f_btn {
   font-weight: 500;
+  max-width: 100%;
+  margin-left: 10px;
+  padding: 0 10px;
 }
 .kic_list_total {
   font-size: 18px;
@@ -1292,6 +1295,18 @@ input::-webkit-search-results-decoration {
 @media (max-width: 767px) {
   .kic_list .col.num {
     display: none;
+  }
+}
+.kic_list .col.chk {
+  width: 65px;
+  line-height: 1;
+}
+@media (max-width: 767px) {
+  .kic_list .col.chk {
+    width: auto;
+    order: 0;
+    margin-right: 10px;
+    margin-bottom: 2px;
   }
 }
 .kic_list .col.prod {
@@ -1417,6 +1432,12 @@ input::-webkit-search-results-decoration {
 .kic_list .col.status.on {
   color: blue;
 }
+.kic_list .col.status.ty_on {
+  color: blue;
+}
+.kic_list .col.status.ty_soon {
+  color: hotpink;
+}
 @media (max-width: 767px) {
   .kic_list .col.status {
     width: auto;
@@ -1424,6 +1445,23 @@ input::-webkit-search-results-decoration {
     font-size: 13px;
     font-weight: bold;
     order: 0;
+    margin-bottom: 2px;
+  }
+}
+.kic_list .col.order {
+  width: 70px;
+}
+@media (max-width: 767px) {
+  .kic_list .col.order {
+    font-size: 13px;
+    width: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    order: 0;
+  }
+  .kic_list .col.order::before {
+    content: "노출순서 : ";
+    color: #999;
   }
 }
 .kic_list .col.writer {
@@ -2128,8 +2166,18 @@ input::-webkit-search-results-decoration {
   box-sizing: border-box;
   font-size: 18px;
 }
+.f_input.pi_true {
+  pointer-events: all;
+}
 .f_input.w100 {
   max-width: 100%;
+}
+.f_input.ty_num {
+  padding: 0;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
 }
 .f_input[type=password] {
   font-family: "Verdana";
@@ -2139,6 +2187,15 @@ input::-webkit-search-results-decoration {
 }
 .f_input:read-only {
   background-color: #f6f7fa;
+}
+.f_input.inp-date {
+  max-width: 300px;
+  cursor: pointer;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  padding-right: 50px;
+  background-position: calc(100% - 4px) center;
+  background-image: url(../images/common/ico_calendar1.svg);
 }
 @media (max-width: 767px) {
   .f_input {
@@ -2248,6 +2305,15 @@ input::-webkit-search-results-decoration {
   background-color: #555;
   border-color: #555;
   color: #fff;
+}
+
+.f_date_group {
+  display: flex;
+  align-items: center;
+}
+.f_date_group .unit {
+  margin: 0 10px;
+  flex-shrink: 0;
 }
 
 .board_write_cont {

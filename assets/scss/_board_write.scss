@@ -1,8 +1,18 @@
 .f_input {
     width: 100%;
     max-width: 600px;
+    &.pi_true {
+      pointer-events: all;  
+    }
     &.w100 {
         max-width: 100%;
+    }
+    &.ty_num {
+        padding: 0;
+        width: 40px;
+        height: 30px;
+        text-align: center;
+        font-size: 14px;
     }
     height: 60px;
     padding: 0 30px;
@@ -14,7 +24,15 @@
     }
     &:read-only {
         background-color: #f6f7fa;
-        
+    }
+    &.inp-date {
+        max-width: 300px;
+        cursor: pointer;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        padding-right: 50px;
+        background-position: calc(100% - 4px) center;
+        background-image: url(../images/common/ico_calendar1.svg);
     }
 
     @include mobile {
@@ -117,6 +135,16 @@
         }
     }
 }
+
+.f_date_group {
+    display: flex;
+    align-items: center;
+    .unit {
+        margin: 0 10px;
+        flex-shrink: 0;
+    }
+}
+
 
 .board_write {
     &_cont {

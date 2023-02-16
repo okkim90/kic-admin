@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 - KIC 코리아인스투르먼트(주)</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <!--// style -->
+
+     <!-- js -->
+     <script src="../assets/js/jquery-3.1.1.min.js"></script>
+     <script defer src="../assets/js/swiper.min.js"></script>
+     <script defer src="../assets/js/scrollAni.js"></script>
+     <script defer src="../assets/js/header.js"></script>
+     <!--// js -->
+</head>
+<body>
+    <div id="skip-nav">
+        <a href="#container"></a>
+    </div>
+    <header id="header" class="header top">
+        <div class="header_top">
+            <div class="inner">
+                <div class="log_area">
+                    <div class="log_area_user">
+                        <strong><a href="">관리자</a></strong>님,  환영합니다.
+                    </div>
+                    <div class="log_area_btn">
+                        <button type="button" class="btn_logout"><div class="blind">로그아웃</div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bot">
+            <div class="inner">
+                <h1>
+                    <a href="/html/">
+                        <i class="ico_logo">
+                            <div class="blind">KIC 코리아인스투루먼트(주)</div>
+                        </i>
+                    </a>
+                </h1>
+                <button type="button" class="btn_toggle_nav">
+                    <span class="blind">메뉴 토글 버튼</span>
+                    <span class="bar_set">
+                        <span class="bar bar_top"></span>
+                        <span class="bar bar_mid"></span>
+                        <span class="bar bar_bot"></span>
+                    </span>
+                </button>
+                <ul class="header_menu">
+                    <li class="hm_dep1">
+                        <a href="" class="hm_dep1_link"><span>문의 관리<spna class="board_count">135</spna></span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="request_list.html" class="hm_dep2_link">견적문의 관리<span class="board_count">125</span></a></li>
+                                <li class="hm_dep2_item"><a href="qna_list.html" class="hm_dep2_link">Q&A 관리<span class="board_count">7</span></a></li>
+                                <li class="hm_dep2_item"><a href="contact_list.html" class="hm_dep2_link">Contact us 관리<span class="board_count">3</span></a></li>
+                                <li class="hm_dep2_item"><a href="tech_list.html" class="hm_dep2_link">기술문의 관리<span class="board_count">0</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hm_dep1"> 
+                        <a href="" class="hm_dep1_link"><span>게시판 관리</span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="notice_list.html" class="hm_dep2_link">공지사항 관리</a></li>
+                                <li class="hm_dep2_item"><a href="reference_list.html" class="hm_dep2_link">자료실 관리</a></li>
+                                <li class="hm_dep2_item"><a href="popup_list.html" class="hm_dep2_link">팝업 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile menu-->
+        <nav id="nav" class="nav">
+            <div class="nav_inner">
+                <a href="" class="nav_logo"><img src="../assets/images/common/logo.svg" alt=""></a>
+                <div class="log_area">
+                    <div class="log_area_user">
+                        <strong><a href="">관리자</a></strong>님,  환영합니다.
+                    </div>
+                    <div class="log_area_btn">
+                        <button type="button" class="btn_logout"><div class="blind">로그아웃</div></button>
+                    </div>
+                </div>
+                <ul class="nav_dep1">   
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">문의 관리<spna class="board_count">135</spna></a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="request_list.html" class="nav_link">견적문의 관리<span class="board_count">125</span></a></li>
+                            <li class="nav_dep2_item"><a href="qna_list.html" class="nav_link">Q&A 관리<span class="board_count">7</span></a></li>
+                            <li class="nav_dep2_item"><a href="contact_list.html" class="nav_link">Contact us 관리<span class="board_count">3</span></a></li>
+                            <li class="nav_dep2_item"><a href="tech_list.html" class="nav_link">기술문의 관리<span class="board_count">0</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">게시판 관리</a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="notice_list.html" class="nav_link">공지사항 관리</a></li>
+                            <li class="nav_dep2_item"><a href="reference_list.html" class="nav_link">자료실 관리</a></li>
+                            <li class="nav_dep2_item"><a href="popup_list.html" class="nav_link">팝업 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--//mobile menu -->
+    </header>
+    <div id="container" class="container">
+        <div class="sub_wrap">
+            <div class="inner">
+                <div class="sub_tit">
+                    <h2 class="tit">팝업 관리</h2>
+                </div>
+                <form action="" class="search_form">
+                    <select name="" id="" class="search_form_select">
+                        <option value="">진행상태 전체</option>
+                        <option value="">게시 중</option>
+                        <option value="">게시 예정</option>
+                        <option value="">게시 완료</option>
+                    </select>
+                    <select name="" id="" class="search_form_select">
+                        <option value="">전체</option>
+                        <option value="">제목</option>
+                        <option value="">내용</option>
+                    </select>
+                    <input type="search" placeholder="검색어를 입력하세요." class="search_form_input">
+                    <button type="button" class="search_form_btn"><i class="ico_search"></i>검색</button>
+                </form>
+                <div class="kic_list_wrap">
+                    <div class="kic_list_top">
+                        <div class="kic_list_total">전체 <span>1,000</span> 건</div>                        
+                        <div class="btn_box">
+                            <button type="button" class="f_btn bg_blue">팝업 저장</button>
+                            <a href="popup_write.html" class="f_btn bg_grey">팝업 추가</a>
+                        </div>
+                    </div>
+                    <div class="kic_list">
+                        <div class="kic_list_head">
+                            <div class="col chk">노출여부</div>
+                            <div class="col order">노출순서</div>
+                            <div class="col status">진행상태</div>    
+                            <div class="col tit">제목</div>
+                            <div class="col writer">작성자</div>
+                            <div class="col date">시작일</div>
+                            <div class="col date">종료일</div>
+                        </div>
+                        <!-- 
+                            [DEV] 
+                            진행상태별 클래스 적용
+                            예정: .ty_soon
+                            게시중: .ty_on
+                            게시완료: 클래스 없음
+                        -->
+                        <ul class="kic_list_body">
+                            <li class="kic_list_item">
+                                <div class="kic_list_link">
+                                    <div class="col chk">
+                                        <input type="checkbox" class="input_chk chk_popup" onchange="chk_popup(this)" checked>
+                                    </div>
+                                    <div class="col order"><input type="number" value="1" class="f_input ty_num"></div>
+                                    <div class="col status ty_soon">예정</div>
+                                    <div class="col tit">
+                                        <a href="popup_edit.html" class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</a>
+                                    </div>
+                                    <div class="col writer col_bot">관리자1</div>
+                                    <div class="col date col_bot">2023-11-22</div>
+                                    <div class="col date col_bot">2023-11-23</div>
+                                </div>
+                            </li>
+                            <li class="kic_list_item">
+                                <div class="kic_list_link">
+                                    <div class="col chk">
+                                        <input type="checkbox" class="input_chk chk_popup" onchange="chk_popup(this)" checked>
+                                    </div>
+                                    <div class="col order"><input type="number" value="2" class="f_input ty_num"></div>
+                                    <div class="col status ty_on">게시 중</div>
+                                    <div class="col tit">
+                                        <a href="popup_edit.html" class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</a> 
+                                    </div>
+                                    <div class="col writer col_bot">관리자1</div>
+                                    <div class="col date col_bot">2023-11-22</div>
+                                    <div class="col date col_bot">2023-11-23</div>
+                                </div>
+                            </li>
+                            <li class="kic_list_item">
+                                <div class="kic_list_link">
+                                    <div class="col chk">
+                                        <input type="checkbox" class="input_chk chk_popup" onchange="chk_popup(this)" checked>
+                                    </div>
+                                    <div class="col order"><input type="number" value="3" class="f_input ty_num"></div>
+                                    <div class="col status ty_on">게시 중</div> 
+                                    <div class="col tit">
+                                        <a href="popup_edit.html" class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</a>  
+                                    </div>
+                                    <div class="col writer col_bot">관리자1</div>
+                                    <div class="col date col_bot">2023-11-22</div>
+                                    <div class="col date col_bot">2023-11-23</div>
+                                </div>
+                            </li>
+                            <li class="kic_list_item">
+                                <div class="kic_list_link">
+                                    <div class="col chk">
+                                        <input type="checkbox" class="input_chk chk_popup" onchange="chk_popup(this)" disabled>
+                                    </div>
+                                    <div class="col order">-</div>
+                                    <div class="col status">완료</div>  
+                                    <div class="col tit">
+                                        <a href="popup_edit.html" class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</a> 
+                                    </div>
+                                    <div class="col writer col_bot">관리자1</div>
+                                    <div class="col date col_bot">2023-11-22</div>
+                                    <div class="col date col_bot">2023-11-23</div>
+                                </div>
+                            </li>
+                            <li class="kic_list_item">
+                                <div class="kic_list_link">
+                                    <div class="col chk">
+                                        <input type="checkbox" class="input_chk chk_popup" onchange="chk_popup(this)" disabled>
+                                    </div>
+                                    <div class="col order">-</div>
+                                    <div class="col status">완료</div>
+                                    <div class="col tit">
+                                        <a href="popup_edit.html" class="txt">제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목  제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</a>       
+                                    </div>
+                                    <div class="col writer col_bot">관리자1</div>
+                                    <div class="col date col_bot">2023-11-22</div>
+                                    <div class="col date col_bot">2023-11-23</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--체크시 순서 input 보이게 -->
+                        <script>
+                            function chk_popup(target){
+                                let $this = $(target);
+                                let $li_order = $this.parents('.kic_list_item').find('.col.order');
+                                let chk = $this.is(":checked");
+                                //let $length = $('.f_input.ty_num').length;
+                                
+                                if(chk){
+                                    $li_order.html(`
+                                        <input type="number" value="0" class="f_input ty_num">
+                                    `);
+                                    console.log('123123');
+                                }else{
+                                    $li_order.html('-')
+                                }
+                                
+                            }
+                            
+                        </script>
+
+                        <!-- 검색결과 없을경우 -->
+                        <div class="no_result">
+                            <img src="../assets/images/common/ico_noresult.svg" alt="">
+                            <p>검색결과가 없습니다.</p> 
+                        </div>
+                        <!--// 검색결과 없을경우 -->
+                    </div>
+                    <div class="paging_wrap">
+                        <a href="" class="paging_btn ty_first"><span class="blind">처음</span></a>
+                        <a href="" class="paging_btn ty_prev"><span class="blind">이전</span></a>
+                        <ul class="paging_list">
+                            <li><span class="paging_btn current">1</span></li>
+                            <li><a href="" class="paging_btn">2</a></li>
+                            <li><a href="" class="paging_btn">3</a></li>
+                            <li><a href="" class="paging_btn">4</a></li>
+                            <li><a href="" class="paging_btn">5</a></li>
+                        </ul>
+                        <a href="" class="paging_btn ty_next"><span class="blind">다음</span></a>
+                        <a href="" class="paging_btn ty_last"><span class="blind">마지막</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <p class="copyright">
+            Copyright@KIC, Korea Instrument All Rights Reserved.
+        </p>
+    </div>
+</body>
+</html>

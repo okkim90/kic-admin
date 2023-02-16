@@ -7,17 +7,20 @@
     <title>관리자 - KIC 코리아인스투르먼트(주)</title>
 
     <!-- style -->
+    <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/datepicker.css">
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/css/common.css">
     <!--// style -->
-
-     <!-- js -->
-     <script src="../assets/js/jquery-3.1.1.min.js"></script>
-     <script defer src="../assets/js/swiper.min.js"></script>
-     <script defer src="../assets/js/scrollAni.js"></script>
-     <script defer src="../assets/js/header.js"></script>
-     <script defer src="../assets/js/fileupload.js"></script>
-     <!--// js -->
+   
+    <!-- js -->
+    <script src="../assets/js/jquery-3.1.1.min.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script defer src="../assets/js/swiper.min.js"></script>
+    <script defer src="../assets/js/scrollAni.js"></script>
+    <script defer src="../assets/js/header.js"></script>
+    <script defer src="../assets/js/fileupload.js"></script>
+    <!--// js -->
 </head>
 <body>
     <div id="skip-nav">
@@ -117,14 +120,13 @@
         <div class="sub_wrap">
             <div class="inner">
                 <div class="sub_tit">
-                    <h2 class="tit">공지사항 관리</h2>
+                    <h2 class="tit">팝업 관리</h2>
                 </div>
                 <div class="sub_sec">
                     
                     <p class="board_write_required"><span>*</span> 필수 입력값입니다.</p>
                     <div class="board_write">
                         <div class="board_write_cont">
-                            
                             <div class="board_write_item ">
                                 <label for="" class="col_tit">제목 <span class="ico_required">*</span></label>
                                 <div class="col_cont">
@@ -132,57 +134,42 @@
                                 </div>
                             </div>
                             <div class="board_write_item ">
-                                <label for="" class="col_tit">고정여부 <span class="ico_required">*</span></label>
+                                <label for="" class="col_tit">게시 기간 <span class="ico_required">*</span></label>
                                 <div class="col_cont">
-                                    <div class="chk_list">
-                                        <label class="chk_list_item"><input type="radio" name="noti" class="input_chk"> 일반</label>
-                                        <label class="chk_list_item"><input type="radio" name="noti" class="input_chk"> 상단고정</label>
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="board_write_item">
-                                <label for="" class="col_tit">내용 <span class="ico_required">*</span></label>
-                                <div class="col_cont">
-                                    <textarea name="" id="" class="f_textarea" placeholder="내용을 입력해주세요." required></textarea>
+                                    <div class="f_date_group">
+                                        <input type="text" class="f_input inp-date inp-date-start pi_true" readonly>
+                                        <span class="unit">~</span>
+                                        <input type="text" class="f_input inp-date pi_true" readonly>
+                                    </div>
                                 </div>
                             </div>
                             <div class="board_write_item">
                                 <label for="" class="col_tit">
-                                    썸네일 <span class="ico_required">*</span>
+                                    팝업 이미지 <span class="ico_required">*</span>
                                     
                                 </label>
                                 <div class="col_cont">
                                     <div class="upload_thumb">
                                         <div class="board_write_tip ty_top">
-                                            * 사이즈 : 290 X 180(px) / 확장자: jpg, png, gif
+                                            * 사이즈 : 000 X 000(px) / 확장자: jpg, png, gif
                                         </div>
                                         <input type="file" class="input_file" required>
-                                        <!-- 썸네일 이미지 선택된 상태-->
-                                        <!--
+                                        <!-- 팝업 이미지 선택된 상태-->    
                                         <div class="upload_thumb_preview">
                                             <strong class="tit">미리보기</strong> 
                                             <div class="img_box">
                                                 <button type="button" class="btn_del"><div class="blind">삭제</div></button>
                                                 <img src="../assets/images/main/notice_sample2.png" alt="">
                                             </div>
-                                        </div>
-                                         -->
+                                        </div> 
+                                        <!--// 팝업 이미지 선택된 상태-->
                                     </div>     
                                 </div>
                             </div>
-                            <div class="board_write_item">
-                                <label for="" class="col_tit">첨부파일</label>
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">링크(새창열기)</label>
                                 <div class="col_cont">
-                                    <div class="file_wrap">
-                                        <div class="file_set">
-                                            <div class="file_box"> <!-- 활성화 .has_file 클래스-->
-                                                <input type="file" class="f_hidden" onchange="select_file(this)" value="">
-                                                <input type="text" class="f_input" placeholder="파일을 선택해주세요." onclick=" open_file(this)" value="" readonly>
-                                                <button class="btn_del" onclick=" del_file(this)"><span class="blind">파일삭제</span></button>
-                                            </div>
-                                            <button class="btn_add" onclick="add_form(5) //add_form(최대값)"><span class="blind">행 추가</span></button>
-                                        </div>  
-                                    </div>
+                                    <input type="text" class="f_input w100" placeholder="url을 입력해주세요" value="">
                                 </div>
                             </div>
                         </div>
@@ -200,5 +187,40 @@
             Copyright@KIC, Korea Instrument All Rights Reserved.
         </p>
     </div>
+    
+    <script>
+        $(function(){
+            $.datepicker.regional['ko'] = {
+            closeText: '닫기',
+            prevText: '이전달',
+            nextText: '다음달',
+            currentText: '오늘',
+            monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+            monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+            dayNames: ['일','월','화','수','목','금','토'],
+            dayNamesShort: ['일','월','화','수','목','금','토'],
+            dayNamesMin: ['일','월','화','수','목','금','토'],
+            weekHeader: 'Wk',
+            dateFormat: 'yy-mm-dd',
+            firstDay: 0,
+            isRTL: false,
+            showMonthAfterYear: true,
+            changeMonth: true,
+            changeYear: true
+            };
+            $.datepicker.setDefaults($.datepicker.regional['ko']);
+            
+            $(".inp-date").datepicker({
+                //showOn: "button",
+                //buttonImage: "../img/ico_calendar1.svg",
+                //buttonImageOnly: true,
+            });
+            
+            //초기값을 오늘 날짜로 설정
+            $(".inp-date-start").datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+            //초기값을 내일 날짜로 설정
+            $(".inp-date-end").datepicker('setDate', '+1D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+        });
+    </script>
 </body>
 </html>
