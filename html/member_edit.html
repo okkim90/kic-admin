@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 - KIC 코리아인스투르먼트(주)</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <!--// style -->
+
+     <!-- js -->
+     <script src="../assets/js/jquery-3.1.1.min.js"></script>
+     <script defer src="../assets/js/swiper.min.js"></script>
+     <script defer src="../assets/js/scrollAni.js"></script>
+     <script defer src="../assets/js/header.js"></script>
+     <!--// js -->
+</head>
+<body>
+    <div id="skip-nav">
+        <a href="#container"></a>
+    </div>
+    <header id="header" class="header top">
+        <div class="header_top">
+            <div class="inner">
+                <div class="log_area">
+                    <div class="log_area_user">
+                        <strong><a href="">관리자</a></strong>님,  환영합니다.
+                    </div>
+                    <div class="log_area_btn">
+                        <button type="button" class="btn_logout"><div class="blind">로그아웃</div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bot">
+            <div class="inner">
+                <h1>
+                    <a href="/html/">
+                        <i class="ico_logo">
+                            <div class="blind">KIC 코리아인스투루먼트(주)</div>
+                        </i>
+                    </a>
+                </h1>
+                <button type="button" class="btn_toggle_nav">
+                    <span class="blind">메뉴 토글 버튼</span>
+                    <span class="bar_set">
+                        <span class="bar bar_top"></span>
+                        <span class="bar bar_mid"></span>
+                        <span class="bar bar_bot"></span>
+                    </span>
+                </button>
+                <ul class="header_menu">
+                    <li class="hm_dep1">
+                        <a href="" class="hm_dep1_link"><span>문의 관리<spna class="board_count">135</spna></span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="request_list.html" class="hm_dep2_link">견적문의 관리<span class="board_count">125</span></a></li>
+                                <li class="hm_dep2_item"><a href="qna_list.html" class="hm_dep2_link">Q&A 관리<span class="board_count">7</span></a></li>
+                                <li class="hm_dep2_item"><a href="contact_list.html" class="hm_dep2_link">Contact us 관리<span class="board_count">3</span></a></li>
+                                <li class="hm_dep2_item"><a href="tech_list.html" class="hm_dep2_link">기술문의 관리<span class="board_count">0</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hm_dep1"> 
+                        <a href="" class="hm_dep1_link"><span>게시판 관리</span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="notice_list.html" class="hm_dep2_link">공지사항 관리</a></li>
+                                <li class="hm_dep2_item"><a href="reference_list.html" class="hm_dep2_link">자료실 관리</a></li>
+                                <li class="hm_dep2_item"><a href="popup_list.html" class="hm_dep2_link">팝업 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hm_dep1"> 
+                        <a href="" class="hm_dep1_link"><span>관리자</span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="member_list.html" class="hm_dep2_link">직원 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile menu-->
+        <nav id="nav" class="nav">
+            <div class="nav_inner">
+                <a href="" class="nav_logo"><img src="../assets/images/common/logo.svg" alt=""></a>
+                <div class="log_area">
+                    <div class="log_area_user">
+                        <strong><a href="">관리자</a></strong>님,  환영합니다.
+                    </div>
+                    <div class="log_area_btn">
+                        <button type="button" class="btn_logout"><div class="blind">로그아웃</div></button>
+                    </div>
+                </div>
+                <ul class="nav_dep1">   
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">문의 관리<spna class="board_count">135</spna></a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="request_list.html" class="nav_link">견적문의 관리<span class="board_count">125</span></a></li>
+                            <li class="nav_dep2_item"><a href="qna_list.html" class="nav_link">Q&A 관리<span class="board_count">7</span></a></li>
+                            <li class="nav_dep2_item"><a href="contact_list.html" class="nav_link">Contact us 관리<span class="board_count">3</span></a></li>
+                            <li class="nav_dep2_item"><a href="tech_list.html" class="nav_link">기술문의 관리<span class="board_count">0</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">게시판 관리</a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="notice_list.html" class="nav_link">공지사항 관리</a></li>
+                            <li class="nav_dep2_item"><a href="reference_list.html" class="nav_link">자료실 관리</a></li>
+                            <li class="nav_dep2_item"><a href="popup_list.html" class="nav_link">팝업 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">관리자</a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="member_list.html" class="nav_link">직원 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--//mobile menu -->
+    </header>
+    <div id="container" class="container">
+        <div class="sub_wrap">
+            <div class="inner">
+                <div class="sub_tit">
+                    <h2 class="tit">직원관리</h2>
+                </div>
+                <div class="sub_sec">
+                    
+                    <p class="board_write_required"><span>*</span> 필수 입력값입니다.</p>
+                    <div class="board_write">
+                        <div class="board_write_cont">
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">이름</label>
+                                <div class="col_cont">
+                                    홍길동
+                                </div>
+                            </div>
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">아이디</label>
+                                <div class="col_cont">
+                                    kagkdg1234
+                                </div>
+                            </div>
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">비밀번호</label>
+                                <div class="col_cont">
+                                    <button type="button" class="f_btn ty_small bg_blue">초기화</button>
+                                    &nbsp;&nbsp; 
+                                    <span class="inner_tip">* 비밀번호 초기화 시 아이디와 비밀번호는 동일하게 변경 됩니다.</span> 
+                                </div>
+                            </div>
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">이메일 <span class="ico_required">*</span></label>
+                                <div class="col_cont">
+                                    <input type="text" class="f_input inp-id" placeholder="하이웍스 계정" value="tesgsdf1234" required> @kic21.co.kr
+                                </div>
+                            </div>
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">소속 <span class="ico_required">*</span></label>
+                                <div class="col_cont">
+                                    <div class="f_select_wrap">
+                                        <select name="" id="" class="f_select ty_branch">
+                                            <option value=""  disabled>지사 선택</option>
+                                            <option value="" selected>서울본사</option>
+                                            <option value="">부산지사</option>
+                                            <option value="">대전지사</option>
+                                        </select>
+                                        <select name="" id="" class="f_select ty_branch">
+                                            <option value="" disabled>부서 선택</option>
+                                            <option value="">경영관리팀</option>
+                                            <option value="" selected>IT서비스개발실</option>
+                                            <option value="">전략기획사업부</option>
+                                            <option value="">교정기술본부</option>
+                                            <option value="">고객지원본부</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board_write_item">
+                                <label for="" class="col_tit">핸드폰 번호 <span class="ico_required">*</span></label>
+                                <div class="col_cont">
+                                    <input type="tel" class="f_input" placeholder="“-” 제외하고 숫자만 입력해주세요 (ex: 01012341234)" value="01023451234" required>
+                                </div>
+                            </div>
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">견적요청 알림 <span class="ico_required">*</span></label>
+                                <div class="col_cont">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk" checked>
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">예</span>
+                                            <span class="toggle_box_txt ty_false">아니요</span>     
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="board_write_item ">
+                                <label for="" class="col_tit">권한 설정 <span class="ico_required">*</span></label>
+                                <div class="col_cont">
+                                    <div class="chk_list">
+                                        <label class="chk_list_item"><input type="radio" name="noti" class="input_chk" checked> 일반 관리자</label>
+                                        <label class="chk_list_item"><input type="radio" name="noti" class="input_chk"> 슈퍼 관리자</label>
+                                    </div>  
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="btn_area taC ty_bot">
+                            <input type="submit" class="f_btn ty_big bg_blue" value="등록"></input>
+                            <button type="button" class="f_btn ty_big line_black">취소</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <p class="copyright">
+            Copyright@KIC, Korea Instrument All Rights Reserved.
+        </p>
+    </div>
+</body>
+</html>

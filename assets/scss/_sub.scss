@@ -395,6 +395,7 @@
         font-size: 18px;
         @include tablet {
             max-width: none;
+            min-width: 100px;
         }
         @include mobile {
             flex: auto;
@@ -1567,6 +1568,184 @@
             border-top: 10px solid #ededed;
             border-left: 0 solid transparent;
             border-right: 10px solid transparent;
+        }
+    }
+}
+
+.db_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 0 -20px;
+    @include tablet {
+        margin: 0;
+    }
+    .db_sec {
+        margin-top: 60px;
+        padding: 0 20px;
+        width: 50%;
+        box-sizing: border-box;
+        @include tablet {
+            width: 100%;
+            padding: 0 ;
+        }
+        @include mobile {
+            margin-top: 40px;
+        }
+        &_inner {
+            height: 100%;
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 0 12px rgba(#000,.25);
+            @include mobile {
+                padding: 25px 20px;
+                border-radius: 15px;
+            }
+        }
+        &_top {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-end;
+            @include mobile {
+                margin-bottom: 15px;
+            }
+            .btn_link {
+                margin-left: auto;
+                color: #999;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 1;
+                padding: 5px 0;
+                margin-bottom: -5px;
+                &:hover {
+                    text-decoration: underline;
+                }
+                @include mobile {
+                    font-size: 12px;
+                }
+            }
+            .tit {
+                font-size: 24px;
+                line-height: 1;
+                font-weight: bold;
+                @include mobile {
+                    font-size: 20px;
+                    letter-spacing: -0.8px;
+                }
+            }
+            .count {
+                font-size: 18px;
+                line-height: 1.1;
+                margin-left: 6px;
+                @include mobile {
+                    font-size: 14px;
+                    letter-spacing: -0.6px;
+                }
+                b {
+                    color: #00f;
+                }
+            }
+        }
+    }
+    .kic_list {
+        font-size: 15px;
+        .col.tit {
+            line-height: 32px;
+            @include mobile {
+                line-height: 1.7;
+            }
+        }
+        @include mobile {
+            .col.branch {
+                margin-bottom: 2px;
+            }
+            .col.col_bot {
+                margin-top: 2px;
+            }
+        }
+        
+    } 
+    .no_result {
+        padding: 30px;
+    }
+}
+
+.btn_chk {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    vertical-align: top;
+    .input_chk {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        z-index: -999;
+        &:checked + .toggle_box {
+            background-color: $CBrand;
+            &::after {
+                left: calc(100% - 30px);
+            }
+            .toggle_box_txt {
+                &.ty_true {
+                    opacity: 1;
+                }
+                &.ty_false {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    
+    
+    .toggle_box {
+        display: block;
+        width: 96px;
+        height: 30px;
+        border-radius: 15px;
+        position: relative;
+        box-sizing: border-box;
+        background-color: #bbb;
+        transition: all .2s ease-in-out;
+
+        
+        
+        &::after {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 30px;
+            transform: scale(0.8);
+            border-radius: 50%;
+            background-color: #fff;
+            left: 0;
+            top: 0;
+            transition: all .2s ease-in-out;
+        }
+        &_txt {
+            position: absolute;
+            color: #fff;
+            font-size: 14px;
+            line-height: 30px;
+            left: 0;
+            top: 0;
+            transition: all .2s ease-in-out;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0 10px;
+            &.ty_true {
+                padding-right: 30px;
+                opacity: 0;
+            }
+            &.ty_false {
+                padding-left: 30px;
+                opacity: 1;
+            }
         }
     }
 }

@@ -64,9 +64,9 @@
         &.ty_notice {
             background-color: #f6f7fa;
             @include mobile {
-                .col.tit {
-                    width: calc(100% - 50px);
-                }
+                // .col.tit {
+                //     width: calc(100% - 50px);
+                // }
                 .col.num {
                     display: block;
                     width: auto;
@@ -291,8 +291,9 @@
             }
         }
         &.writer {
-            width: 120px;
+            width: 150px;
             flex-shrink: 0;
+            word-break: break-all;
         }
         &.branch {
             width: 80px;
@@ -389,6 +390,25 @@
 
         background: url(../images/common/ico_comment.svg) no-repeat 0 center;
     }
+    .ico_new {
+        background-color: rgb(255, 0, 166);
+        color: #fff;
+        padding: 0 4px;
+        line-height: 18px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: 4px;
+    }
+    .link {
+        color: #00f;
+        text-decoration: underline;
+    }
+    &.ty_fixed {
+        .col {
+            flex: 1;
+        }
+    }
 
     &_info {
         display: flex;
@@ -422,3 +442,89 @@
 }
 
 
+
+.card_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    padding-top: 30px;
+    @include mobile {
+        gap: 20px 10px;
+        font-size: 13px;
+        padding-top: 20px;
+    }
+    &_item {
+        width: calc(20% - 16px);
+
+        @include tablet {
+            width: calc(33.3333% - 13.3333px);
+        }
+        @include mobile {
+            width: calc(50% - 5px);
+        }
+
+        &_inner {
+            padding: 20px;
+            border-radius: 16px;
+            background-color: rgba($CBrand, .06);
+            
+            box-sizing: border-box;
+            position: relative;
+            @include mobile { 
+                padding: 15px;
+                border-radius: 10px;
+            }
+        }
+        font-size: 14px;
+        line-height: 1.6;
+        .ico_crown {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 20px;
+            top: -16px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(../images/sub/ico_crown.svg);
+            background-size: cover;
+            @include mobile {  
+                width: 24px;
+                height: 24px;
+                left: 15px;
+                top: -12px;
+            }
+        }
+        .card_top {
+            
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            &_name {
+
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: underline;
+                color: #00f;
+                margin-right: 10px;
+                @include mobile { 
+                    font-size: 16px;
+                }
+            }
+            @include mobile { 
+                .card_id {
+                    width: 100%;
+                }
+            }
+
+        }
+        .card_info {
+            margin-top: 6px;
+        }
+        .card_btn {
+            text-align: right;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #dcdcdc;
+        }
+    }
+}

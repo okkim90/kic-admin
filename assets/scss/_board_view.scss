@@ -157,6 +157,10 @@
     &_cont {
         border-bottom: 1px solid $CLine;
         padding: 30px 20px 40px;
+        * {
+            max-width: 100%;
+            width: auto;
+        }
         @include mobile {
             font-size: 14px;
             padding: 20px 0 30px;

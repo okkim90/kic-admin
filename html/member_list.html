@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 - KIC 코리아인스투르먼트(주)</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <!--// style -->
+
+     <!-- js -->
+     <script src="../assets/js/jquery-3.1.1.min.js"></script>
+     <script defer src="../assets/js/swiper.min.js"></script>
+     <script defer src="../assets/js/scrollAni.js"></script>
+     <script defer src="../assets/js/header.js"></script>
+     <!--// js -->
+</head>
+<body>
+    <div id="skip-nav">
+        <a href="#container"></a>
+    </div>
+    <header id="header" class="header top">
+        <div class="header_top">
+            <div class="inner">
+                <div class="log_area">
+                    <div class="log_area_user">
+                        <strong><a href="">관리자</a></strong>님,  환영합니다.
+                    </div>
+                    <div class="log_area_btn">
+                        <button type="button" class="btn_logout"><div class="blind">로그아웃</div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bot">
+            <div class="inner">
+                <h1>
+                    <a href="/html/">
+                        <i class="ico_logo">
+                            <div class="blind">KIC 코리아인스투루먼트(주)</div>
+                        </i>
+                    </a>
+                </h1>
+                <button type="button" class="btn_toggle_nav">
+                    <span class="blind">메뉴 토글 버튼</span>
+                    <span class="bar_set">
+                        <span class="bar bar_top"></span>
+                        <span class="bar bar_mid"></span>
+                        <span class="bar bar_bot"></span>
+                    </span>
+                </button>
+                <ul class="header_menu">
+                    <li class="hm_dep1">
+                        <a href="" class="hm_dep1_link"><span>문의 관리<spna class="board_count">135</spna></span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="request_list.html" class="hm_dep2_link">견적문의 관리<span class="board_count">125</span></a></li>
+                                <li class="hm_dep2_item"><a href="qna_list.html" class="hm_dep2_link">Q&A 관리<span class="board_count">7</span></a></li>
+                                <li class="hm_dep2_item"><a href="contact_list.html" class="hm_dep2_link">Contact us 관리<span class="board_count">3</span></a></li>
+                                <li class="hm_dep2_item"><a href="tech_list.html" class="hm_dep2_link">기술문의 관리<span class="board_count">0</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hm_dep1"> 
+                        <a href="" class="hm_dep1_link"><span>게시판 관리</span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="notice_list.html" class="hm_dep2_link">공지사항 관리</a></li>
+                                <li class="hm_dep2_item"><a href="reference_list.html" class="hm_dep2_link">자료실 관리</a></li>
+                                <li class="hm_dep2_item"><a href="popup_list.html" class="hm_dep2_link">팝업 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hm_dep1"> 
+                        <a href="" class="hm_dep1_link"><span>관리자</span></a>
+                        <div class="hm_dep2_box">
+                            <ul class="hm_dep2">
+                                <li class="hm_dep2_item"><a href="member_list.html" class="hm_dep2_link">직원 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile menu-->
+        <nav id="nav" class="nav">
+            <div class="nav_inner">
+                <a href="" class="nav_logo"><img src="../assets/images/common/logo.svg" alt=""></a>
+                <div class="log_area">
+                    <div class="log_area_user">
+                        <strong><a href="">관리자</a></strong>님,  환영합니다.
+                    </div>
+                    <div class="log_area_btn">
+                        <button type="button" class="btn_logout"><div class="blind">로그아웃</div></button>
+                    </div>
+                </div>
+                <ul class="nav_dep1">   
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">문의 관리<spna class="board_count">135</spna></a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="request_list.html" class="nav_link">견적문의 관리<span class="board_count">125</span></a></li>
+                            <li class="nav_dep2_item"><a href="qna_list.html" class="nav_link">Q&A 관리<span class="board_count">7</span></a></li>
+                            <li class="nav_dep2_item"><a href="contact_list.html" class="nav_link">Contact us 관리<span class="board_count">3</span></a></li>
+                            <li class="nav_dep2_item"><a href="tech_list.html" class="nav_link">기술문의 관리<span class="board_count">0</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">게시판 관리</a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="notice_list.html" class="nav_link">공지사항 관리</a></li>
+                            <li class="nav_dep2_item"><a href="reference_list.html" class="nav_link">자료실 관리</a></li>
+                            <li class="nav_dep2_item"><a href="popup_list.html" class="nav_link">팝업 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_dep1_item">
+                        <a href="javascript:void(0)" class="nav_dep1_tit">관리자</a>
+                        <ul class="nav_dep2">             
+                            <li class="nav_dep2_item"><a href="member_list.html" class="nav_link">직원 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--//mobile menu -->
+    </header>
+    <div id="container" class="container">
+        <div class="sub_wrap">
+            <div class="inner">
+                <div class="sub_tit">
+                    <h2 class="tit">직원관리</h2>
+                </div>
+                <form action="" class="search_form">
+                    <select name="" id="" class="search_form_select">
+                        <option value="">지사 전체</option>
+                        <option value="">서울본사</option>
+                        <option value="">부산지사</option>
+                        <option value="">대전지사</option>
+                    </select>
+                    <select name="" id="" class="search_form_select">
+                        <option value="">접속허용 전체</option>
+                        <option value="">허용</option>
+                        <option value="">불가</option>
+                        <option value="">대전지사</option>
+                    </select>
+                    <select name="" id="" class="search_form_select">
+                        <option value="">전체</option>
+                        <option value="">이름</option>
+                        <option value="">ID</option>
+                        <option value="">핸드폰 번호</option>
+                    </select>
+                    <input type="search" placeholder="검색어를 입력하세요." class="search_form_input">
+                    <button type="button" class="search_form_btn"><i class="ico_search"></i>검색</button>
+                </form>
+                <div class="kic_list_wrap">
+                    <div class="kic_list_top">
+                        <div class="kic_list_total">전체 <span>1,000</span> 건</div>
+                        <div class="btn_box">
+                            <a href="member_add.html" class="f_btn bg_blue">신규 등록</a>
+                        </div>
+                    </div>
+
+                    <ul class="card_list">
+                        <!-- card item -->
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <i class="ico_crown"></i> <!--슈퍼관리자일대 아이콘 노출-->
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : adsdvd123)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>  
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk" checked>
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>     
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <!--// card item -->
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : adsdvd123)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk" checked>
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>      
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : adsdvd123)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>  
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasva1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : dff)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div> 
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasdfa1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <i class="ico_crown"></i>
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : czxczxczxc)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div> 
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <i class="ico_crown"></i>
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asd)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div> 
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasdfa1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasdfa1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasdfa1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasdfa1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasdfa1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasdfa1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="card_list_item">
+                            <div class="card_list_item_inner">
+                                <div class="card_top">
+                                    <a href="" class="card_top_name">조기견</a> 
+                                    <span class="card_id">(ID : asdfasdfa1234)</span> 
+                                </div>
+                                <div class="card_info">
+                                    서울본사 &gt; IT서비스개발실 
+                                </div>
+                                <div class="card_btn">
+                                    <label class="btn_chk">
+                                        <input type="checkbox" class="input_chk">
+                                        <span class="toggle_box">
+                                            <span class="toggle_box_txt ty_true">접속 허용</span>
+                                            <span class="toggle_box_txt ty_false">접속 불가</span>       
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                    </ul>
+                    <div class="paging_wrap">
+                        <a href="" class="paging_btn ty_first"><span class="blind">처음</span></a>
+                        <a href="" class="paging_btn ty_prev"><span class="blind">이전</span></a>
+                        <ul class="paging_list">
+                            <li><span class="paging_btn current">1</span></li>
+                            <li><a href="" class="paging_btn">2</a></li>
+                            <li><a href="" class="paging_btn">3</a></li>
+                            <li><a href="" class="paging_btn">4</a></li>
+                            <li><a href="" class="paging_btn">5</a></li>
+                        </ul>
+                        <a href="" class="paging_btn ty_next"><span class="blind">다음</span></a>
+                        <a href="" class="paging_btn ty_last"><span class="blind">마지막</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <p class="copyright">
+            Copyright@KIC, Korea Instrument All Rights Reserved.
+        </p>
+    </div>
+</body>
+</html>
